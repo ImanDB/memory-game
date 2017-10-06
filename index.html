@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>Memory Game</title>
+</head>
+
+<body class="center-align">
+    <header class="cyan darken-1">
+        <div class="container">
+            <h1>Memory Game</h1>
+        </div>
+    </header>
+    <main class="grey lighten-4">
+
+        <!-- start box -->
+        <div id="start" class="card hoverable small">
+            <p>
+                Welcome to Memory Game :)
+                <br /> Choose a difficulty level and press the start button.
+            </p>
+            <select id="difficulty">
+                <option disabled="true" selected="true">Choose a level</option>
+                <option value="4">Easy</option>
+                <option value="8">Normal</option>
+                <option value="16">Hard</option>
+                <option value="36">Challenging</option>
+            </select>
+            <br>
+            <a id="game-start" class="waves-effect waves-light btn cyan z-depth-3">
+                <i class="material-icons left">play_circle_outline</i>Start</a>
+        </div>
+
+        <!-- items box -->
+        <div id="items"></div>
+
+        <div id="end" class="hide card hoverable small">
+            <p>
+                Congratulations!
+                <br /> You could finish the game in
+                <span id="endtime"></span>!
+            </p>
+        </div>
+
+    </main>
+    <footer class="cyan darken-1">
+        <a id="restart" class="btn-floating btn-large waves-effect waves-light deep-purple darken-1 z-depth-3 hide"><i class="material-icons">refresh</i></a>
+        <div>Correct moves:
+            <span id="correct">0</span>
+        </div>
+        <div>Wrong moves:
+            <span id="miss">0</span>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
