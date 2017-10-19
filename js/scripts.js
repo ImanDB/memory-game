@@ -99,7 +99,7 @@ window.addEventListener('load',
                 setContainerClass();
 
 
-                //Adding images to page
+                //Picking random images
                 for (let index = 0; index < difficulty; index += 2) {
                     let randomImage = pickRandomImages();
                     //Make sure no image is picked more than once
@@ -111,7 +111,7 @@ window.addEventListener('load',
 
                 }
 
-                //Randomizing the items in randomImages
+                //Randomizing the items in randomImages array
                 shuffle(randomImages);
 
                 //Creating cards and rendering on page
