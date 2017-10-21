@@ -1,3 +1,4 @@
+'use strict';
 window.addEventListener('load',
     function () {
 
@@ -197,7 +198,8 @@ window.addEventListener('load',
 
         //Restart button
         $$('#restart').onclick = function () {
-            difficulty = 0;
+            difficulty = null;
+            randomImages = [];
             $$('#items').innerHTML = "";
             $$('#items').classList.remove(containerClass);
             $$('#correct').innerHTML = 0;
